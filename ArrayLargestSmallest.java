@@ -27,3 +27,5 @@ public class ArrayLargestSmallest {
         System.out.println("The largest value is "+arr1[0]+", and the smallest value is "+arr1[n-1]);
     }
 }
+
+//find largest and smallest value of array
