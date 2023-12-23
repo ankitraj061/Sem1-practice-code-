@@ -12,7 +12,7 @@ class Remove {
                         a[k + 1] = temp;
                     }
                     n--;
-                    j = i + 1;
+                    j--;
 
                 }
             }
@@ -21,14 +21,15 @@ class Remove {
         for (int i = 0; i < n; i++) {
             b[i] = a[i];
         }
+
         return b;
     }
 }
 
 class ArrayUnionOfTwo {
     public static void main(String[] args) {
-        int a[] = { 1, 2, 3, 5, 3, 1, 3, 4, 7 };
-        int b[] = { 2, 4, 5, 1, 6, 3, 5, 2, 8 };
+        int a[] = { 1, 2, 3, 3, 3, 3, 5, 3, 1, 3, 4, 7, 9 };
+        int b[] = { 2, 4, 5, 1, 9, 6, 3, 5, 2, 8 };
         Remove r = new Remove();
 
         int union[] = new int[a.length + b.length];
