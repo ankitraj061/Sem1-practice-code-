@@ -15,7 +15,6 @@ class Solution {
                     }
                     n--;
                     j--;
-
                 }
             }
         }
@@ -23,10 +22,8 @@ class Solution {
         for (int i = 0; i < n; i++) {
             b[i] = a[i];
         }
-
         return b;
     }
-
     public int display(int[] a, int n, int k) {
         int sum = 0;
         int removeDuplicateArray[] = removeDuplicate(a);
@@ -36,11 +33,9 @@ class Solution {
                 if (removeDuplicateArray[i] == a[j]) {
                     count++;
                 }
-
             }
             if (n / k < count) {
                 sum = sum + (count - n / k);
-
             }
 
         }
@@ -72,3 +67,6 @@ class Array0 {
 
     }
 }
+
+
+//Given an array arr of size N and an element k. The task is to find the count of elements in the array that appear more than n/k times.
