@@ -13,7 +13,6 @@ class Remove {
                     }
                     n--;
                     j--;
-
                 }
             }
         }
@@ -21,7 +20,6 @@ class Remove {
         for (int i = 0; i < n; i++) {
             b[i] = a[i];
         }
-
         return b;
     }
 }
@@ -35,9 +33,7 @@ class ArrayUnionOfTwo {
         int union[] = new int[a.length + b.length];
         System.arraycopy(a, 0, union, 0, a.length);
         System.arraycopy(b, 0, union, a.length, b.length);
-
         int[] result = r.removeDuplicate(union);
-
         for (int i = 0; i < result.length; i++)
             System.out.print(result[i] + " ");
     }
